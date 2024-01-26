@@ -1,4 +1,13 @@
 # ASL Recognition Integrated With Drone Technology
 
-## Introduction 
-This research is part of the capstone project developed by Clara (Trang) Dang, Kajal Shukla, Davis Thomas, and Josh Park for the degree of Master of Science in Applied Data Science at the University of Chicago. The development spanned over 6 months and involved three missions, which are facial recognition, ASL recognition, and drone integration. However, in this repository, I focus on the section that I was the primary contributor, which is the ASL recognition section. We developed a model that can intricately extract features of hand movements and generate a classification of corresponding letters in the American Fingerspelled Alphabet 
+This script outlines the training and inference process for recognizing American Sign Language at letter level from A to Z. This work utilized two sets of stationary hand images for 26 letters, one for training and the other for unbiased inference. Using MediaPipe and several pre-processing steps that have been researched to optimize the accuracy and velocity, the scripts meticulously identified hands and the letters signed. Then, we used a Random Forest model to ensure an accurate but also seamless integration onto a Tello drone. We found that using a machine-learning based model outperforms a neural network-based model in both speed and accuracy. The research demonstrates efficacy with a light weight solution that offers real-time and accurate signed letter translation on a mobile device. It has the potential to progress into a personal translator for sign languages and can enhance communication experience for the deaf and the hard of hearing community. 
+
+# Results
+We recorded almost perfect accuracy when tested on the training dataset, which is equivalent to other similar research in the field, and achieved 62% accuracy when tested on a non-exposed dataset. Additionally, accuracy improved to 75% on webcam input and 68% on a moving drone camera input. 
+
+# Demonstration 
+Please find below a short video demonstration where the drone "reads" the hand movement and correctly outputs the letters. 
+![trim_demo](https://github.com/dangtr1910/ASL_recognition/assets/108795992/8d724e80-fcee-4dd5-8936-b82a7b1b52e5)
+
+
+
